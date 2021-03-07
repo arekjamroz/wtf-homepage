@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <title>WTF - Strona domowa</title>
+</head>
+
+<body>
+    <header class="navigation">
+        <nav>
+            <a class="navigation-link" href="index.html">Strona główna</a>
+            <a class="navigation-link" href="nauka-html.html">Nauka HTML</a>
+            <a class="navigation-link" href="nauka-css.html">Nauka CSS</a>
+            <a class="navigation-link" href="nauka-js.html">Nauka JS</a>
+        </nav>
+    </header>
+    <main>
+        <header class="main-header">
+            <h1>Arek Jamróz - Strona domowa</h1>
+        </header>
+        <section class="section">
+            <h2 class="section-header">Zasady tworzenia CSSów</h2>
+            <p>
+                Style CSS możemy dołączać do strony www na 3 sposoby
+            </p>
+            <ul class="unordered-list">
+                <li class="unordered-list-element">
+                    Zewnętrzny plik, który dodajemy za pomocą poniższej komendy:<br>
+                    &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;
+                </li>
+                <li class="unordered-list-element">
+                    Wewnętzny blok styli zamieszczony w sekcji &lt;head&gt; pomiędzy:<br>
+                    &lt;style&gt; a &lt;/style&gt;
+                </li>
+                <li class="unordered-list-element">
+                    Bezpośrednio przy tagu html za pomocą atrybuty <strong>style=""</strong>
+                </li>
+            </ul>
+            <p>
+                Ze względu na specyficzność najlepszym rozwiązaniem jest używanie zewnętrznego pliku.
+            </p>
+            <article class="content">
+                <h3 class="content-header">Specyficzność w CSS</h3>
+                <p>
+                    Specyficzność jest bardzo ważną rzeczą w przy tworzeniu stylów i aby nie mieć z nią problemów dobrze
+                    jest nauczyć się prawidłowo ostylowywać stronę www.
+                </p>
+                <p>
+                    Wartości specyficzności:
+                </p>
+                <ul class="unordered-list">
+                    <li class="unordered-list-element">
+                        1,0,0,0,0 - taka wartość jest dla właściwości <strong>!important</strong> przypisanej do
+                        właściwości elementu
+                    </li>
+                    <li class="unordered-list-element">
+                        0,1,0,0,0 - taka specyficzność jest w przypadku, kiedy mamy do czynienia z właściwością <strong>inline</strong>
+                    </li>
+                    <li class="unordered-list-element">
+                        0,0,1,0,0 - taka wartość specyficzności jest dla właściowści przypisanych do <strong>id</strong>
+                    </li>
+                    <li class="unordered-list-element">
+                        0,0,0,1,0 - taka wartość specyficzności jest dla właściwości przypisanych do <strong>class</strong>
+                    </li>
+                    <li class="unordered-list-element">
+                        0,0,0,0,1 - taka wartość specyficzności jest przypisywana dla właściwości przypisanych do znacznika (np. h1)
+                    </li>
+                </ul>
+                <p>
+                    Przykłady specyficzności:<br>
+
+                </p>
+            </article>
+        </section>
+        <section class="section">
+            <h2 class="section-header">
+                Przykładowe atrybuty CSS wraz z opisem
+            </h2>
+        </section>
+    </main>
+    <footer class="footer">
+        Strona domowa Arka Jamróz, Wszystkie treści są efektem pracy podczas szkolenia <strong class="WTF">WTF: Co ten
+            frontend</strong>.
+    </footer>
+</body>
+
+</html>
