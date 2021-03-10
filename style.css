@@ -71,3 +71,13 @@ h4 {
     background:#1ec8fc;
     font-family:'Courier New', Courier, monospace;
 }
+
+.css-element {
+    color: darkblue;
+    background: lightskyblue;
+
+}
+
+.css-element-details{
+    padding-left: 20px;
+}
