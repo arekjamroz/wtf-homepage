@@ -81,3 +81,8 @@ h4 {
 .css-element-details{
     padding-left: 20px;
 }
+
+.html_elements {
+    padding-left: 10px;
+    color: darkred;
+}
