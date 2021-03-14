@@ -80,6 +80,9 @@ h4 {
 
 .css-element-details{
     padding-left: 20px;
+    color:rgba(4, 99, 161, 0.726);
+    border: 1px dotted yellowgreen;
+    background: #e79f9f;
 }
 
 .html_elements {
