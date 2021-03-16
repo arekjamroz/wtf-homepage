@@ -1,142 +1,138 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>WTF - Strona domowa</title>
+    </head>
 
-    <title>WTF - Strona domowa</title>
-</head>
-
-<body>
-    <header class="navigation">
-        <nav>
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka-html.html">Nauka HTML</a>
-            <a class="navigation-link" href="nauka-css.html">Nauka CSS</a>
-            <a class="navigation-link" href="nauka-js.html">Nauka JS</a>
-        </nav>
-    </header>
-    <main>
-        <header class="main-header">
-            <h1>Arek Jamróz - Strona domowa</h1>
+    <body>
+        <header class="navigation">
+            <nav>
+                <a class="navigation-link" href="index.html">Strona główna</a>
+                <a class="navigation-link" href="nauka-html.html">Nauka HTML</a>
+                <a class="navigation-link" href="nauka-css.html">Nauka CSS</a>
+                <a class="navigation-link" href="nauka-js.html">Nauka JS</a>
+            </nav>
         </header>
-        <section class="section">
-            <h2 class="section-header">Zasady tworzenia CSSów</h2>
-            <p>
-                Style CSS możemy dołączać do strony www na 3 sposoby
-            </p>
-            <ul class="unordered-list">
-                <li class="unordered-list-element">
-                    Zewnętrzny plik, który dodajemy za pomocą poniższej komendy:<br>
-                    &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;
-                </li>
-                <li class="unordered-list-element">
-                    Wewnętzny blok styli zamieszczony w sekcji &lt;head&gt; pomiędzy:<br>
-                    &lt;style&gt; a &lt;/style&gt;
-                </li>
-                <li class="unordered-list-element">
-                    Bezpośrednio przy tagu html za pomocą atrybuty <strong>style=""</strong>
-                </li>
-            </ul>
-            <p>
-                Ze względu na specyficzność najlepszym rozwiązaniem jest używanie zewnętrznego pliku.
-            </p>
-            <article class="content">
-                <h3 class="content-header">Specyficzność w CSS</h3>
-                <p>
-                    Specyficzność jest bardzo ważną rzeczą w przy tworzeniu stylów i aby nie mieć z nią problemów dobrze
-                    jest nauczyć się prawidłowo ostylowywać stronę www.
-                </p>
-                <p>
-                    Wartości specyficzności:
-                </p>
+        <main>
+            <header class="main-header">
+                <h1>Arek Jamróz - Strona domowa</h1>
+            </header>
+            <section class="section">
+                <h2 class="section-header">Zasady tworzenia CSSów</h2>
+                <p>Style CSS możemy dołączać do strony www na 3 sposoby</p>
                 <ul class="unordered-list">
                     <li class="unordered-list-element">
-                        1,0,0,0,0 - taka wartość jest dla właściwości <strong>!important</strong> przypisanej do
-                        właściwości elementu
+                        Zewnętrzny plik, który dodajemy za pomocą poniższej komendy:<br />
+                        &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;
                     </li>
                     <li class="unordered-list-element">
-                        0,1,0,0,0 - taka specyficzność jest w przypadku, kiedy mamy do czynienia z właściwością
-                        <strong>inline</strong>
+                        Wewnętzny blok styli zamieszczony w sekcji &lt;head&gt; pomiędzy:<br />
+                        &lt;style&gt; a &lt;/style&gt;
                     </li>
                     <li class="unordered-list-element">
-                        0,0,1,0,0 - taka wartość specyficzności jest dla właściowści przypisanych do <strong>id</strong>
-                    </li>
-                    <li class="unordered-list-element">
-                        0,0,0,1,0 - taka wartość specyficzności jest dla właściwości przypisanych do
-                        <strong>class</strong>
-                    </li>
-                    <li class="unordered-list-element">
-                        0,0,0,0,1 - taka wartość specyficzności jest przypisywana dla właściwości przypisanych do
-                        znacznika (np. h1)
+                        Bezpośrednio przy tagu html za pomocą atrybuty <strong>style=""</strong>
                     </li>
                 </ul>
+                <p>Ze względu na specyficzność najlepszym rozwiązaniem jest używanie zewnętrznego pliku.</p>
+                <article class="content">
+                    <h3 class="content-header">Specyficzność w CSS</h3>
+                    <p>
+                        Specyficzność jest bardzo ważną rzeczą w przy tworzeniu stylów i aby nie mieć z nią problemów
+                        dobrze jest nauczyć się prawidłowo ostylowywać stronę www.
+                    </p>
+                    <p>Wartości specyficzności:</p>
+                    <ul class="unordered-list">
+                        <li class="unordered-list-element">
+                            1,0,0,0,0 - taka wartość jest dla właściwości <strong>!important</strong> przypisanej do
+                            właściwości elementu
+                        </li>
+                        <li class="unordered-list-element">
+                            0,1,0,0,0 - taka specyficzność jest w przypadku, kiedy mamy do czynienia z właściwością
+                            <strong>inline</strong>
+                        </li>
+                        <li class="unordered-list-element">
+                            0,0,1,0,0 - taka wartość specyficzności jest dla właściowści przypisanych do
+                            <strong>id</strong>
+                        </li>
+                        <li class="unordered-list-element">
+                            0,0,0,1,0 - taka wartość specyficzności jest dla właściwości przypisanych do
+                            <strong>class</strong>
+                        </li>
+                        <li class="unordered-list-element">
+                            0,0,0,0,1 - taka wartość specyficzności jest przypisywana dla właściwości przypisanych do
+                            znacznika (np. h1)
+                        </li>
+                    </ul>
+                    <p>Przykłady specyficzności:<br /></p>
+                </article>
+            </section>
+            <section class="section">
+                <h2 class="section-header">Przykładowe atrybuty CSS wraz z opisem</h2>
                 <p>
-                    Przykłady specyficzności:<br>
-
+                    <span class="css-element">padding</span> - margines wewnętrzny, pełny zapis obejmuje: padding: top
+                    right bottom left <span class="css-example">padding: 10px 5px 20px 12px</span>
                 </p>
-            </article>
-        </section>
-        <section class="section">
-            <h2 class="section-header">
-                Przykładowe atrybuty CSS wraz z opisem
-            </h2>
-            <p><span class="css-element">padding</span> - margines wewnętrzny, pełny zapis obejmuje: padding: top right
-                bottom left <span class="css-example">padding: 10px 5px 20px 12px</span></p>
-            <p><span class="css-element">display</span> - zmienia sposób wyświetlania elementów, elementy:<br>
-                <span class="css-element-details">display: inline</span> - wyświetlani elementów w lini <br>
-                <span class="css-element-details">display: block</span> - wyświetlani elementów w postaci blokowej <br>
-                <span class="css-element-details">display: inline-block</span> - dodaje do elementów właściwości
-                przeciwne niż domyślne z zachowaniem domyślnych <br>
-            </p>
-            <p><span class="css-element">overflow</span> - zmienia sposób wyświetlania treści w elementach,
-                elementy:<br>
-                <span class="css-element-details">overflow: hidden</span> - ukrywa nadmiar treści <br>
-                <span class="css-element-details">overflow: visible</span> - wartosć domyślna, nadmiar treści wychodzi
-                poza pudełko <br>
-                <span class="css-element-details">overflow: auto</span> - w przypadku zbyt dużej ilości treści dodaje
-                skrola, aby treść występowała wewnątrz pudełka <br>
-            </p>
-            <p><span class="css-element">border</span> - dodaje obramowanie do elementu, przykład: <br>
-                <span class="css-element-details">border:</span> 1px solid red; ({grubość} {typ} {kolor})
-            </p>
-            <p>
-                <span class="css-element">margin</span> - margines zewnętrzny, zapis podobny do padding
-            </p>
-            <p><span class="css-element">position</span> - "pozycjonuje" elementy na stronie<br>
-                <span class="css-element-details">positon: static</span> - wartość domyślna<br>
-                <span class="css-element-details">position: relative</span> - powoduje, żę właściwości "pozycji" zaczną
-                się odnosić do elementu nadrzędnego a nie do głównego; musi być urzyte w elemencie nadrzędnym<br>
-                <span class="css-element-details">position: absolute</span> - pozwala na dotatkowe pozycjonowanie
-                elementu z tą właściwością przy pomocy atrybutów top, right, bottom, left - wyłącza poza treść element z
-                tą właściwością<br>
-                <span class="css-element-details">position: fixed</span> - zafixowuje się na stronie i nie przesuwa się
-                przy skrolowaniu<br>
-                <span class="css-element-details">position: sticky</span> - przykleja elemnt w kontenerze i wprzypadku,
-                kiedy skrolujemy, to może się wewnątrz kontenera przemieszczać<br>
-                <span class="css-element-details">top, rgith, bottom, left</span> - dodatkowe właściwości, przy
-                kożystaniu z właściwości position<br>
-                <span class="css-element-details">z-index</span> - tworzy warstwy elementów, im większy jest z-index,
-                tym bliżej "ekranu"
-            </p>
-            <p><span class="css-element">float</span> - opływanie elementu - trzeba na nie mocno uważać! <br>
-                <span class="css-element-details">float: left</span> - element ustawia się z lewej strony a tekst opływa
-                go z prawej <br>
-                <span class="css-element-details">float: right</span> - element ustawia się z prawej strony, a treść
-                opływa go z lewej
-            </p>
-            <p><span class="css-element">clear</span> - "czyści wyświetlanie" dla elementów float (wymagany dodatkowy div)
-
-            </p>
-        </section>
-    </main>
-    <footer class="footer">
-        Strona domowa Arka Jamróz, Wszystkie treści są efektem pracy podczas szkolenia <strong class="WTF">WTF: Co ten
-            frontend</strong>.
-    </footer>
-</body>
-
+                <p>
+                    <span class="css-element">display</span> - zmienia sposób wyświetlania elementów, elementy:<br />
+                    <span class="css-element-details">display: inline</span> - wyświetlani elementów w lini <br />
+                    <span class="css-element-details">display: block</span> - wyświetlani elementów w postaci blokowej
+                    <br />
+                    <span class="css-element-details">display: inline-block</span> - dodaje do elementów właściwości
+                    przeciwne niż domyślne z zachowaniem domyślnych <br />
+                </p>
+                <p>
+                    <span class="css-element">overflow</span> - zmienia sposób wyświetlania treści w elementach,
+                    elementy:<br />
+                    <span class="css-element-details">overflow: hidden</span> - ukrywa nadmiar treści <br />
+                    <span class="css-element-details">overflow: visible</span> - wartosć domyślna, nadmiar treści
+                    wychodzi poza pudełko <br />
+                    <span class="css-element-details">overflow: auto</span> - w przypadku zbyt dużej ilości treści
+                    dodaje skrola, aby treść występowała wewnątrz pudełka <br />
+                </p>
+                <p>
+                    <span class="css-element">border</span> - dodaje obramowanie do elementu, przykład: <br />
+                    <span class="css-element-details">border:</span> 1px solid red; ({grubość} {typ} {kolor})
+                </p>
+                <p><span class="css-element">margin</span> - margines zewnętrzny, zapis podobny do padding</p>
+                <p>
+                    <span class="css-element">position</span> - "pozycjonuje" elementy na stronie<br />
+                    <span class="css-element-details">positon: static</span> - wartość domyślna<br />
+                    <span class="css-element-details">position: relative</span> - powoduje, żę właściwości "pozycji"
+                    zaczną się odnosić do elementu nadrzędnego a nie do głównego; musi być urzyte w elemencie
+                    nadrzędnym<br />
+                    <span class="css-element-details">position: absolute</span> - pozwala na dotatkowe pozycjonowanie
+                    elementu z tą właściwością przy pomocy atrybutów top, right, bottom, left - wyłącza poza treść
+                    element z tą właściwością<br />
+                    <span class="css-element-details">position: fixed</span> - zafixowuje się na stronie i nie przesuwa
+                    się przy skrolowaniu<br />
+                    <span class="css-element-details">position: sticky</span> - przykleja elemnt w kontenerze i
+                    wprzypadku, kiedy skrolujemy, to może się wewnątrz kontenera przemieszczać<br />
+                    <span class="css-element-details">top, rgith, bottom, left</span> - dodatkowe właściwości, przy
+                    kożystaniu z właściwości position<br />
+                    <span class="css-element-details">z-index</span> - tworzy warstwy elementów, im większy jest
+                    z-index, tym bliżej "ekranu"
+                </p>
+                <p>
+                    <span class="css-element">float</span> - opływanie elementu - trzeba na nie mocno uważać! <br />
+                    <span class="css-element-details">float: left</span> - element ustawia się z lewej strony a tekst
+                    opływa go z prawej <br />
+                    <span class="css-element-details">float: right</span> - element ustawia się z prawej strony, a treść
+                    opływa go z lewej
+                </p>
+                <p>
+                    <span class="css-element">clear</span> - "czyści wyświetlanie" dla elementów float (wymagany
+                    dodatkowy div)
+                </p>
+            </section>
+        </main>
+        <footer class="footer">
+            Strona domowa Arka Jamróz, Wszystkie treści są efektem pracy podczas szkolenia
+            <strong class="WTF">WTF: Co ten frontend</strong>.
+        </footer>
+    </body>
 </html>

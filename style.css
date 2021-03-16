@@ -89,7 +89,7 @@ h4 {
     font-family:'Courier New', Courier, monospace;
 }
 
-.css-element {
+.css-element .js-element {
     color: darkblue;
     background: lightskyblue;
 

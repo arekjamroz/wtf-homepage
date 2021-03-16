@@ -1,80 +1,89 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>WTF - Strona domowa</title>
+    </head>
 
-    <title>WTF - Strona domowa</title>
-</head>
-
-<body>
-    <header class="navigation">
-        <nav>
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka-html.html">Nauka HTML</a>
-            <a class="navigation-link" href="nauka-css.html">Nauka CSS</a>
-            <a class="navigation-link" href="nauka-js.html">Nauka JS</a>
-        </nav>
-    </header>
-    <main>
-        <header class="main-header">
-            <h1>Arek Jamróz - Strona domowa</h1>
+    <body>
+        <header class="navigation">
+            <nav>
+                <a class="navigation-link" href="index.html">Strona główna</a>
+                <a class="navigation-link" href="nauka-html.html">Nauka HTML</a>
+                <a class="navigation-link" href="nauka-css.html">Nauka CSS</a>
+                <a class="navigation-link" href="nauka-js.html">Nauka JS</a>
+            </nav>
         </header>
-        <section class="section">
-            <h2 class="section-header">Kim jestem?</h2>
-            <p> Hej, na co dzień zajmuję się automatyką przemysłową. Od pewnego czasu uczę się forntendu.
-                Ta strona to pole doświadczalne, w którym testuję zagadnienia poruszane na kursie.
-                Witam cię więc w moim parku rozrywki o nazwie <strong class="special">Frontend</strong> :)</p>
-        </section>
-        <section class="section">
-            <h2 class="section-header">Notatki z <strong class="WTF">WTF: Co ten frontend</strong></h2>
-            <article class="content">
-                <h3 class="content-header">Zbiór przerobionych modułów</h3>
-                <p> Poniżej znajduje się lista przerobionych modułów z kursu <strong class="WTF">WTF: Co ten frontend</strong>.
-                    Do każdego modułu będzie krótki opis co zawierał.</p>
+        <main>
+            <header class="main-header main-header--js">
+                <h1>Arek Jamróz - Strona domowa</h1>
+            </header>
+            <section class="section">
+                <h2 class="section-header">Kim jestem?</h2>
+                <p>
+                    Hej, na co dzień zajmuję się automatyką przemysłową. Od pewnego czasu uczę się forntendu. Ta strona
+                    to pole doświadczalne, w którym testuję zagadnienia poruszane na kursie. Witam cię więc w moim parku
+                    rozrywki o nazwie <strong class="special">Frontend</strong> :)
+                </p>
+            </section>
+            <section class="section">
+                <h2 class="section-header">Notatki z <strong class="WTF">WTF: Co ten frontend</strong></h2>
+                <article class="content">
+                    <h3 class="content-header">Zbiór przerobionych modułów</h3>
+                    <p>
+                        Poniżej znajduje się lista przerobionych modułów z kursu
+                        <strong class="WTF">WTF: Co ten frontend</strong>. Do każdego modułu będzie krótki opis co
+                        zawierał.
+                    </p>
 
-                <h4>Moduł 1</h4>
-                <p >Wprowadzenie do kursu i przygotowanie środowiska pracy.</p>
-                <h4>Moduł 2</h4>
-                <p >Poznajemy html-a. Struktura strony, pierwsze znaczniki html oraz podstawy stylowania.</p>
-                <h4>Moduł 3</h4>
-                <p >Poznajemy sposoby zapisywania klas i identyfikatorów (id) - konwencja nazewnictwa</p>
-                <ul class="unordered-list">
-                    <li class="unordered-list-element">
-                        camelCase - łączymy wszystkie wyrazy zmiennej i każdy wyraz za wyjątkiem pierwszego jest pisany
-                        z dużej litery
-                    </li>
-                    <li class="unordered-list-element">
-                        kebab-case - łączymy wyrazy za pomocą myślnika, wszystkie litery małe
-                    </li>
-                    <li class="unordered-list-element">
-                        snake_case - łączymy wyrazy za pomocą podkreślenia, wszystkie litery małe
-                    </li>
-                    <li class="unordered-list-element">
-                        PascalCase - łączymy wszystkie wyrazy i każdy wyraz zaczynamy dużą literą
-                    </li>
-                </ul>
-                <p >Pierwsze spotkanie z javascriptem</p>
-                <h4>Moduł 4</h4>
-                <p>Podstawy git-a</p>
-                <p></p>
-            </article>
-            <article class="content">
-                <h3  class="content-header">Projekty stworzone w ramach <strong class="WTF">WTF: Co ten frontend</strong></h3>
-                <p> W tym miejscu znajdują się linki do stron, które są wynikiem pracy nad kursem <strong class="WTF">WTF: Co ten frontend</strong>.
-                    Linki prowadzą do repozytorium github projektu oraz do github pages.</p>
-            </article>
-        </section>
-
-    </main>
-    <footer class="footer">
-        Strona domowa Arka Jamróz, Wszystkie treści są efektem pracy podczas szkolenia <strong class="WTF">WTF: Co ten frontend</strong>.
-    </footer>
-    <script src="main.js">
-
-    </script>
-</body>
+                    <h4>Moduł 1</h4>
+                    <p>Wprowadzenie do kursu i przygotowanie środowiska pracy.</p>
+                    <h4>Moduł 2</h4>
+                    <p>Poznajemy html-a. Struktura strony, pierwsze znaczniki html oraz podstawy stylowania.</p>
+                    <h4>Moduł 3</h4>
+                    <p>Poznajemy sposoby zapisywania klas i identyfikatorów (id) - konwencja nazewnictwa</p>
+                    <ul class="unordered-list">
+                        <li class="unordered-list-element">
+                            camelCase - łączymy wszystkie wyrazy zmiennej i każdy wyraz za wyjątkiem pierwszego jest
+                            pisany z dużej litery
+                        </li>
+                        <li class="unordered-list-element">
+                            kebab-case - łączymy wyrazy za pomocą myślnika, wszystkie litery małe
+                        </li>
+                        <li class="unordered-list-element">
+                            snake_case - łączymy wyrazy za pomocą podkreślenia, wszystkie litery małe
+                        </li>
+                        <li class="unordered-list-element">
+                            PascalCase - łączymy wszystkie wyrazy i każdy wyraz zaczynamy dużą literą
+                        </li>
+                    </ul>
+                    <p>Pierwsze spotkanie z javascriptem</p>
+                    <h4>Moduł 4</h4>
+                    <p>Podstawy git-a</p>
+                    <p>BEM - block element modifier<br>
+                    Uproszczenie sposobu stylowania. Wymaga konsekwencji! 
+                    </p>
+                </article>
+                <article class="content">
+                    <h3 class="content-header">
+                        Projekty stworzone w ramach <strong class="WTF">WTF: Co ten frontend</strong>
+                    </h3>
+                    <p>
+                        W tym miejscu znajdują się linki do stron, które są wynikiem pracy nad kursem
+                        <strong class="WTF">WTF: Co ten frontend</strong>. Linki prowadzą do repozytorium github
+                        projektu oraz do github pages.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            Strona domowa Arka Jamróz, Wszystkie treści są efektem pracy podczas szkolenia
+            <strong class="WTF">WTF: Co ten frontend</strong>.
+        </footer>
+        <script src="main.js"></script>
+    </body>
 </html>

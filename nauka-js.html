@@ -1,79 +1,72 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>WTF - Strona domowa</title>
+    </head>
 
-    <title>WTF - Strona domowa</title>
-</head>
-
-<body>
-    <header class="navigation">
-        <nav>
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka-html.html">Nauka HTML</a>
-            <a class="navigation-link" href="nauka-css.html">Nauka CSS</a>
-            <a class="navigation-link" href="nauka-js.html">Nauka JS</a>
-        </nav>
-    </header>
-    <main>
-        <header class="main-header">
-            <h1>Arek Jamróz - Strona domowa</h1>
+    <body>
+        <header class="navigation">
+            <nav>
+                <a class="navigation-link" href="index.html">Strona główna</a>
+                <a class="navigation-link" href="nauka-html.html">Nauka HTML</a>
+                <a class="navigation-link" href="nauka-css.html">Nauka CSS</a>
+                <a class="navigation-link" href="nauka-js.html">Nauka JS</a>
+            </nav>
         </header>
-        <section class="section">
-            <h2 class="section-header">Programowanie przy użyciu javascript</h2>
-            <article class="content">
-                <h3 class="content-header">
-                    Z czego korzystamy? Czyli o języku javascript
-                </h3>
-                <p>W kursie WTF: Co ten frontend korzystamy z najnowszej wersji jezyka javascript oznaczonej jako ES6+
-                    (ecma script 2015+).<br>
-                    Dzięki rozwojowi aplikacji webowych rozwój języka javascript mocno przyspieszył. Obecnie
-                    aktualizacje języka javascript pojawiają się co roku</p>
-            </article>
-            <article class="content">
-                <h3 class="content-header">
-                    Elementy języka javascript
-                </h3>
-                <p>
-                    Język javascript składa się z następujących elementów: </p>
-                <ul class="unordered-list">
-                    <li class="unordered-list-element">zmienne</li>
-                    <li class="unordered-list-element">funkcje</li>
-                    <li class="unordered-list-element">literały</li>
-                    <li class="unordered-list-element">obiekty</li>
-                    <li class="unordered-list-element">wartości</li>
-                    <li class="unordered-list-element">operacje porównania</li>
-                </ul>
-                <p>
-                    Pliki zawierające kod javascript dołączamy do strony html poprzez dopisanie przed znacznikiem &lt;/body&gt; następującego kodu: <br>
-                    <strong>&lt;script src="nazwa_pliku.js"&gt; &lt;/script&gt;</strong>
-                    
-                </p>
-            </article>
-        </section>
-        <section class="section">
-            <h2 class="section-header">Kod javascript</h2>
-            <article class="content">
-                <h3 class="content-header">
-                    Składnia javascript
-                </h3>
-            </article>
-            <article class="content">
-                <h3 class="content-header">
-                    Przykładowe skrypty
-                </h3>
-            </article>
-        </section>
-    </main>
-    <footer class="footer">
-        Strona domowa Arka Jamróz, Wszystkie treści są efektem pracy podczas szkolenia <strong class="WTF">WTF: Co ten
-            frontend</strong>.
-    </footer>
-
-</body>
-
+        <main>
+            <header class="main-header">
+                <h1>Arek Jamróz - Strona domowa</h1>
+            </header>
+            <section class="section">
+                <h2 class="section-header">Programowanie przy użyciu javascript</h2>
+                <article class="content">
+                    <h3 class="content-header">Z czego korzystamy? Czyli o języku javascript</h3>
+                    <p>
+                        W kursie WTF: Co ten frontend korzystamy z najnowszej wersji jezyka javascript oznaczonej jako
+                        ES6+ (ecma script 2015+).<br />
+                        Dzięki rozwojowi aplikacji webowych rozwój języka javascript mocno przyspieszył. Obecnie
+                        aktualizacje języka javascript pojawiają się co roku
+                    </p>
+                </article>
+                <article class="content">
+                    <h3 class="content-header">Elementy języka javascript</h3>
+                    <p>Język javascript składa się z następujących elementów:</p>
+                    <ul class="unordered-list">
+                        <li class="unordered-list-element">zmienne</li>
+                        <li class="unordered-list-element">funkcje</li>
+                        <li class="unordered-list-element">literały</li>
+                        <li class="unordered-list-element">obiekty</li>
+                        <li class="unordered-list-element">wartości</li>
+                        <li class="unordered-list-element">operacje porównania</li>
+                    </ul>
+                    <p>
+                        Pliki zawierające kod javascript dołączamy do strony html poprzez dopisanie przed znacznikiem
+                        &lt;/body&gt; następującego kodu: <br />
+                        <strong>&lt;script src="nazwa_pliku.js"&gt; &lt;/script&gt;</strong>
+                    </p>
+                </article>
+            </section>
+            <section class="section">
+                <h2 class="section-header">Kod javascript</h2>
+                <article class="content">
+                    <h3 class="content-header">Składnia javascript</h3>
+                    <p><span class="js-element">const</span> - za pomocą tego słowa kluczowego deklarujemy stałą</p>
+                    <p><span class="js-element">let</span> - deklaracja zmiennej (nie deklarujemy typu zmiennej)</p>
+                </article>
+                <article class="content">
+                    <h3 class="content-header">Przykładowe skrypty</h3>
+                    <p><span class="js-lelement">console.log</span> - wyrzuca na konsole dane przekazane do funkcji</p>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            Strona domowa Arka Jamróz, Wszystkie treści są efektem pracy podczas szkolenia
+            <strong class="WTF">WTF: Co ten frontend</strong>.
+        </footer>
+    </body>
 </html>
