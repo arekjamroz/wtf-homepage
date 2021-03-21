@@ -8,6 +8,8 @@ body {
 
 main {
  margin-bottom: 35px;
+ max-width: 1000px;
+ margin: 0 auto;
 }
 
 
